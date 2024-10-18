@@ -1,0 +1,88 @@
+:root{
+    --cor-titulo: #ffffff;
+    --cor-de-fundo: #25272b;
+    --cor-do-botao: var(--cor-titulo);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+}
+
+h1{
+    color: var(--cor-titulo);
+}
+
+/* Centralizar o conteúdo da seção com Flexbox */
+.container.principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Estilo para o H1 */
+h1 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: "Satisfy", cursive;
+    font-weight: 1000;
+    font-style: normal;
+    font-size: 80px;
+}
+
+/* Linha abaixo do título */
+.linha-titulo {
+    width: 50%;
+    border: 2px solid var(--cor-titulo);
+    margin-bottom: 40px;
+}
+
+/* Estilo para as imagens */
+.container-imagens {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+}
+
+.coluna-1 img {
+    width: 90%;
+    margin-bottom: 80px;
+}
+
+.coluna-2 img {
+    width: 110%;
+    margin-top: 90px;
+}
+
+/* Estilo para o botão */
+.container__botao {
+    background-color: var(--cor-do-botao);
+    border-radius: 2px;
+    padding: 0.5em 1.5em;
+    color: #000000; /* Texto do botão em preto */
+    text-align: center;
+    text-decoration: none;
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+/* Centralizando o botão */
+.container__botao {
+    display: inline-block;
+    margin: 40px auto 
+}
+/* Estilo para o parágrafo */
+.texto-destaque {
+    color: #ffffff; /* Muda a cor para branco */
+    font-size: 24px; /* Aumenta o tamanho da fonte */
+    text-align: center; /* Centraliza o texto */
+    margin-top: 20px; /* Adiciona espaçamento acima */
+    max-width: 80%; /* Limita a largura máxima para melhor legibilidade */
+    line-height: 1.6; /* Espaçamento entre linhas para melhorar a leitura */
+}
